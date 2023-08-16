@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India-Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .bg-shadow {
+        background: rgba(22, 22, 22, 0.8);
+    }
+
+    .scleY {
+        transform: scale(1.25, 1.53) translate(0rem, -7ex);
+    }
+
+    .bg-grad {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+        width: 100vw;
+        height: 250px;
+    }
+
+    .bg-grad-1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(540deg, rgba(0, 0, 0, 0.8) 30%, rgba(255, 255, 255, 0) 100%);
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .bg-grad-2 {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 30%, rgba(255, 255, 255, 0) 100%);
+        width: 20vw;
+        height: 100%;
+    }
+
+    .bg-grad-3 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.4) 30%, rgba(255, 255, 255, 0) 100%);
+        width: 20vw;
+        height: 100%;
+    }
+
+    .brdr-b {
+        border-bottom: 10px solid rgb(35, 35, 35);
+    }
+
+    .anchor-gap {
+        text-decoration: underline;
+        font-weight: 200;
+    }
+
+    .anchor-gap-1 ul li {
+        margin-bottom: 10px;
+    }
+
+    select {
+        -webkit-appearance: none;
+    }
+</style>
+
+<body style="overflow-x: hidden;">
+
+    <div id="wrapper">
+        <!-- header section -->
+        <section class="w-full relative">
+            <div class="bg-shadow-1 absolute h-[550px] lg:h-[700px] w-full overflow-hidden brdr-b">
+                <img src="./images/bg-img.jpg" alt="" class="w-full h-full scleY">
+                <div class="bg-grad"></div>
+                <div class="bg-grad-1"></div>
+                <div class="bg-grad-2"></div>
+                <div class="bg-grad-3"></div>
+            </div>
+
+            <div class="max-w-[1200px] relative mx-auto py-3 px-3 sm:px-7 lg:px-0 z-10 mb-[200px]">
+                <!-- nav section -->
+                <div class="flex justify-between text-white">
+                    <img src="./images/nflxlogo.png" alt="" class="lg:w-[180px] w-[120px] lg:h-[70px] h-[50px]">
+
+                    <div class="flex flex-row  sm:gap-4 gap-2 items-center">
+
+
+                        <div class="relative flex flex-row items-center group rounded-md ">
+
+                            <div class="absolute top-1.4 sm:left-4 left-2">
+                                <i class="fa-solid fa-globe" style="color: #b3b4b9;"></i>
+                            </div>
+                            <div class="absolute top-1.4 sm:left-[6.3rem] left-[5.3rem]">
+                                <i class="fa-solid fa-chevron-down" style="color: #b3b4b9;"></i>
+                            </div>
+                            <select
+                                class="bg-transparent bg-shadow text-14px sm:px-10 px-7 py-1 rounded-sm border outline-offset-2">
+                                <option class="bg-white">English</option>
+                                <option class="bg-white">हिन्दी</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="py-1 sm:px-4 px-1 bg-red-600 rounded-sm sm:text-[16px] text-[14px]">Sign
+                                In</button>
+                        </div>
+
+                        <!-- <button
+                            class="py-1 px-9 border-2 border-slate-400 mr-5 rounded-md backdrop-opacity-80 bg-shadow">English
+                        </button> -->
+
+
+                    </div>
+                </div>
+
+                <!-- content -->
+                <div class="flex flex-col text-center text-white gap-6 lg:mt-[12.5rem] mt-32 z-10">
+                    <h2 class="font-extrabold lg:text-5xl text-3xl">
+                        Unlimited movies, TV shows and more
+                    </h2>
+                    <p class="lg:text-[24px] text-[18px]">Watch anywhere. Cancel anytime.</p>
+                    <p class="lg:text-[20px] text-[16px] font-normal">Ready to watch? Enter your email to create or
+                        restart your membership.</p>
+                    <div class="flex md:flex-row flex-col gap-2 mx-auto">
+
+                        <input type="email" placeholder="Email address"
+                            class="pl-4 md:pr-40 pr-24 py-3 outline-2 border outline-white-500 bg-shadow rounded-md text-white backdrop-opacity-50">
+
+                        <button
+                            class="md:px-6 px-4 py-[10px] bg-[#E50914] md:text-[24px] text-[18px] font-bold rounded-md text-white self-center">
+                            Get Started
+                            <i class="fa-regular fa-greater-than"
+                                style="color: #ffffff; font-size: 18px; text-align: center;margin-left: 5px;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- feature section-1 -->
+        <section class="relative w-full brdr-b">
+            <div
+                class="relative max-w-[1200px] mx-auto flex lg:flex-row flex-col lg:gap-8 gap-5 lg:py-[4.5rem] pb-[4.5rem] max-lg:items-center lg:0 px-7">
+                <!-- left-section -->
+                <div
+                    class="flex flex-col text-white lg:text-left text-center  justify-center lg:gap-7 gap-5 lg:w-[50%] w-full">
+                    <h2 class="lg:text-5xl text-3xl font-extrabold ">Enjoy on your TV</h2>
+                    <p class="lg:text-2xl text-[18px]">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                        Blu-ray players and
+                        more.</p>
+                </div>
+
+                <!-- right-section -->
+                <div class="relative overflow-hidden">
+                    <img src="./images/tv.png" alt="">
+                    <video id="play-delay" loop
+                        poster="https://www.jagranimages.com/images/newimg/15082023/15_08_2023-ram_temple_2_23502260.webp"
+                        class="-z-10 absolute w-[80%] top-[18%] left-[10%] bottom-0 right-0">
+                        <source src="./images/Ram_mandir.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- feature section-2 -->
+        <section class="relative w-full brdr-b">
+            <!-- container -->
+            <div
+                class="max-w-[1200px] mx-auto text-white relative flex lg:flex-row flex-col py-[4.5rem] lg:px-0 px-7 max-lg:items-center">
+                <!-- left section -->
+                <div class="relative lg:order-1 order-5">
+                    <img src="./images/mobile-0819.jpg" alt="">
+
+                    <div
+                        class="absolute flex flex-row justify-between text-white w-[60%] left-[19%] bg-black bottom-7 border border-gray-300 md:p-[8px] sm:px-5 pr-2 pl-1 py-2 rounded-xl">
+                        <div class="flex sm:gap-5 gap-2">
+                            <!-- 1st part -->
+                            <div class="md:w-[3.5rem] sm:w-[2.5rem] w-[1.5rem] self-center">
+                                <img src="./images/boxshot.png" alt="" class="w-full">
+                            </div>
+
+                            <!-- 2nd part -->
+                            <div class="self-center sm:mr-16 mr-2">
+                                <p class="sm:text-[16px] text-[14px] font-bold">Stranger Things</p>
+                                <p class="text-[#0071EB] text-[14px]">Downloading...</p>
+                            </div>
+                        </div>
+                        <!-- 3rd part -->
+                        <div class="sm:text-[20px] text-[16px] self-center">
+                            <i class="fa-solid fa-download" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right section -->
+                <div class="flex flex-col justify-center max-lg:text-center gap-5 w-full lg:w-[52%] lg:order-1">
+                    <h2 class="lg:text-[48px] text-3xl font-extrabold lg:leading-[60px] leading-[40px]">Download your
+                        shows to watch offline</h2>
+                    <p class="lg:text-[24px] text-[18px] leading-[30px] lg:w-[80%] w-full">Save your favourites easily
+                        and always have something
+                        to watch.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- feature section 3 -->
+        <section class="relative w-full brdr-b">
+            <div
+                class="relative max-w-[1200px] mx-auto flex lg:flex-row flex-col gap-8 py-[4.5rem] lg:px-0 px-7 max-lg:items-center">
+                <!-- left-section -->
+                <div class="flex flex-col text-white lg:text-left text-center justify-center gap-7 lg:w-[50%] w-full">
+                    <h2 class="text-5xl font-extrabold ">Watch everywhere</h2>
+                    <p class="text-2xl">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+
+                <!-- right-section -->
+                <div class="relative overflow-hidden">
+                    <img src="./images/device-pile-in.png" alt="">
+                    <video id="play-delay2" muted
+                        poster="https://static.india.com/wp-content/uploads/2021/07/Ayodhya-Shree-Ram-Mandir.jpg?impolicy=Medium_Resize&w=1200&h=800"
+                        loop class="-z-10 absolute w-[65%]  top-[10%] left-[17%]">
+                        <source src="./images/Ram_mandir.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- feature section 4 -->
+        <section class="relative w-full brdr-b">
+            <!-- container -->
+            <div
+                class="max-w-[1200px] mx-auto text-white relative flex lg:flex-row flex-col py-[4.5rem] lg:px-0 px-7 max-lg:items-center">
+                <!-- left section -->
+                <div class="relative lg:order-1 order-5">
+                    <img src="./images/children.png" alt="">
+                </div>
+
+                <!-- right section -->
+                <div class="flex flex-col justify-center gap-5 lg:w-[52%] w-full lg:order-1">
+                    <h2 class="lg:text-[48px] text-[32px] font-extrabold leading-[60px] max-lg:text-center">Create
+                        profiles for kids</h2>
+                    <p class="lg:text-[24px] text-[18px] leading-[30px] max-lg:text-center">Send children on adventures
+                        with their favourite characters in
+                        a space made just for them—free with your membership.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- second last section -->
+        <section class="w-full relative brdr-b">
+            <div class="max-w-[1200px] mx-auto py-[4.5rem] flex flex-col gap-9 lg:px-0 px-5">
+                <h1 class="text-white text-center lg:text-5xl text-[32px] font-bold">Frequently Asked Questions</h1>
+
+                <!-- content section -->
+                <div class="text-white px-4">
+
+                    <!-- 1st box -->
+                    <div class="mb-2">
+                        <div id="tgle1"
+                            class="lg:text-[24px] text-[18px] bg-[#2d2d2d] hover:bg-[#414141] cursor-pointer p-6 flex flex-row justify-between">
+                            <p class="text-left">What is Netflix?</p>
+                            <div class="lg:text-[24px] text-[18px] text-center rotate-45 ">
+                                <i id="rotate1" class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div id="toggle-apply1" class="lg:text-[24px] text-[18px] bg-[#2d2d2d] p-6 mt-[1px] text-left">
+                            <p>Netflix is a streaming service that offers a wide variety of
+                                award-winning TV shows, movies,
+                                anime, documentaries and more – on thousands of internet-connected devices.
+                            </p>
+                            <br>
+                            <p>
+                                You can watch as much as you want, whenever you want, without a single ad – all for one
+                                low
+                                monthly price. There's always something new to discover, and new TV shows and movies are
+                                added every week!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2nd box -->
+                    <div class="mb-2">
+                        <div onclick="tgle2()"
+                            class="lg:text-[24px] text-[18px] bg-[#2d2d2d] hover:bg-[#414141] cursor-pointer p-6 flex flex-row justify-between">
+                            <p>How much does Netflix cost?</p>
+                            <div class="lg:text-[24px] text-[18px] text-center rotate-45 ">
+                                <i id="rotate2" class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div id="toggle-apply2" class="lg:text-[24px] text-[18px] bg-[#2d2d2d] p-6 mt-[1px] text-left">
+                            <p>
+                                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for
+                                one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no
+                                contracts.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- 3rd box -->
+                    <div class="mb-2">
+                        <div onclick="tgle3()"
+                            class="lg:text-[24px] text-[18px] bg-[#2d2d2d] hover:bg-[#414141] cursor-pointer p-6 flex flex-row justify-between">
+                            <p>Where can I watch?</p>
+                            <div class="lg:text-[24px] text-[18px] text-center rotate-45 ">
+                                <i id="rotate3" class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div id="toggle-apply3" class="lg:text-[24px] text-[18px] bg-[#2d2d2d] p-6 mt-[1px] text-left">
+                            <p>
+                                Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web
+                                at netflix.com from your personal computer or on any internet-connected device that
+                                offers the Netflix app, including smart TVs, smartphones, tablets, streaming media
+                                players and game consoles.
+                            </p>
+                            <br>
+                            <p>
+                                You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use
+                                downloads to watch while you're on the go and without an internet connection. Take
+                                Netflix with you anywhere.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 4th box -->
+                    <div class="mb-2">
+                        <div onclick="tgle4()"
+                            class="lg:text-[24px] text-[18px] bg-[#2d2d2d] hover:bg-[#414141] cursor-pointer p-6 flex flex-row justify-between">
+                            <p>How do I cancel?</p>
+                            <div class="lg:text-[24px] text-[18px] text-center rotate-45 ">
+                                <i id="rotate4" class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div id="toggle-apply4" class="lg:text-[24px] text-[18px] bg-[#2d2d2d] p-6 mt-[1px] text-left">
+                            <p>
+                                Netflix is flexible. There are no annoying contracts and no commitments. You can easily
+                                cancel your account online in two clicks. There are no cancellation fees – start or stop
+                                your account anytime.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- 5th box -->
+                    <div class="mb-3">
+                        <div onclick="tgle5()"
+                            class="lg:text-[24px] text-[18px] bg-[#2d2d2d] hover:bg-[#414141] cursor-pointer p-6 flex flex-row justify-between">
+                            <p>What can I watch on Netflix?</p>
+                            <div class="lg:text-[24px] text-[18px] text-center rotate-45 ">
+                                <i id="rotate5" class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div id="toggle-apply5" class="lg:text-[24px] text-[18px] bg-[#2d2d2d] p-6 mt-[1px] text-left">
+                            <p>
+                                Netflix has an extensive library of feature films, documentaries, TV shows, anime,
+                                award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- 6th box -->
+                    <div class="mb-2">
+                        <div onclick="tgle6()"
+                            class="lg:text-[24px] text-[18px] bg-[#2d2d2d] hover:bg-[#414141] cursor-pointer p-6 flex flex-row justify-between">
+                            <p>Is Netflix good for kids?</p>
+                            <div class="lg:text-[24px] text-[18px] text-center rotate-45 ">
+                                <i id="rotate6" class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                        <div id="toggle-apply6" class="lg:text-[24px] text-[18px] bg-[#2d2d2d] p-6 mt-[1px] text-left">
+                            <p>
+                                The Netflix Kids experience is included in your membership to give parents control while
+                                kids enjoy family-friendly TV shows and films in their own space.
+                            </p>
+                            <br>
+                            <p>
+                                Kids profiles come with PIN-protected parental controls that let you restrict the
+                                maturity rating of content kids can watch and block specific titles you don’t want kids
+                                to see.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="mx-auto flex flex-col gap-3 ">
+                    <p class="text-white text-center lg:text-[20px] text-[18px]">Ready to watch? Enter your email to
+                        create or restart
+                        your
+                        membership.
+                    </p>
+                    <div class="flex md:flex-row flex-col gap-3 mx-auto items-center">
+
+                        <input type="email" placeholder="Email address"
+                            class="pl-4 sm:pr-48 pr-[115px] py-3 outline-offset-2  bg-shadow rounded-md text-white backdrop-opacity-50 border border-gray-300 ">
+
+                        <button
+                            class="px-10 py-3 bg-[#E50914] hover:bg-[#C11119] md:text-[24px] text-[18px] rounded-md text-white flex items-center">
+                            <div>
+                                Get Started
+                            </div>
+                            <div class="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true"
+                                    class="default-ltr-cache-0 e1mhci4z1" data-name="ChevronRight" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <section class="w-full">
+            <div class="relative max-w-[1200px] mx-auto text-white py-[4.5rem] lg:px-4 px-7">
+                <p>Questions? Call <a href="#" class="underline font-extralight pl-1">97-591-476-25</a></p>
+
+                <!-- content    -->
+                <div
+                    class="flex lg:flex-row sm:flex-wrap max-sm:flex-col lg:gap-[17rem] md:gap-40 sm:gap-[105px]  py-9 anchor-gap-1 ">
+                    <!-- content sub-1 -->
+                    <div>
+                        <ul>
+                            <li><a href="" class="underline font-extralight">FAQ</a></li>
+                            <li><a href="" class="underline font-extralight">Media Center</a></li>
+                            <li><a href="" class="underline font-extralight">Way to Watch</a></li>
+                            <li><a href="" class="underline font-extralight">Cookie Prefrences</a></li>
+                            <li><a href="" class="underline font-extralight">Speed Test</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- content sub-2 -->
+                    <div>
+                        <ul>
+                            <li><a href="" class="underline font-extralight">Help Center</a></li>
+                            <li><a href="" class="underline font-extralight">Investor Relations</a></li>
+                            <li><a href="" class="underline font-extralight">Terms of Use</a></li>
+                            <li><a href="" class="underline font-extralight">Corporate Information</a></li>
+                            <li><a href="" class="underline font-extralight">Legal Notices</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- content sub-3 -->
+                    <div>
+                        <ul>
+                            <li><a href="" class="underline font-extralight">Account</a></li>
+                            <li><a href="" class="underline font-extralight">Jobs</a></li>
+                            <li><a href="" class="underline font-extralight">Privacy</a></li>
+                            <li><a href="" class="underline font-extralight">Contact Us</a></li>
+                            <li><a href="" class="underline font-extralight">Only on Netflix</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="relative flex flex-row items-center group w-[8rem] rounded-md ">
+
+                    <div class="absolute top-1.4 left-4 -z-10 group-hover:z-10">
+                        <i class="fa-solid fa-globe" style="color: #b3b4b9;"></i>
+                    </div>
+                    <div class="absolute top-1.4 left-[7.3rem] -z-10 group-hover:z-10">
+                        <i class="fa-solid fa-chevron-down" style="color: #b3b4b9;"></i>
+                    </div>
+                    <select class="bg-transparent bg-shadow text-14px px-12 py-1 rounded-sm border outline-offset-2">
+                        <option class="bg-white">English</option>
+                        <option class="bg-white">हिन्दी</option>
+                    </select>
+                </div>
+
+                <p class="text-[14px] mt-6 tracking-wide">Netflix India</p>
+            </div>
+
+        </section>
+    </div>
+
+    <script>
+        $("#toggle-apply1").hide();
+        $("#toggle-apply2").hide();
+        $("#toggle-apply3").hide();
+        $("#toggle-apply4").hide();
+        $("#toggle-apply5").hide();
+        $("#toggle-apply6").hide();
+
+
+        $(document).ready(function () {
+            $("#tgle1").click(function () {
+                $("#toggle-apply1").slideToggle(200);
+                $("#rotate1").css({ "rotate": "+=-45deg" });
+            });
+        });
+
+        // box -2
+        function tgle2() {
+            $("#toggle-apply2").slideToggle(200);
+            $("#rotate2").css({ "rotate": "+=-45deg" });
+        }
+
+        // box-3
+        function tgle3() {
+            $("#toggle-apply3").slideToggle(200);
+            $("#rotate3").css({ "rotate": "+=-45deg" });
+        }
+
+        // box-4
+        function tgle4() {
+            $("#toggle-apply4").slideToggle(200);
+            $("#rotate4").css({ "rotate": "+=-45deg" });
+        }
+
+        // box-5
+        function tgle5() {
+            $("#toggle-apply5").slideToggle(200);
+            $("#rotate5").css({ "rotate": "+=-45deg" });
+        }
+
+        // box-6
+        function tgle6() {
+            $("#toggle-apply6").slideToggle(200);
+            $("#rotate6").css({ "rotate": "+=-45deg" });
+        }
+
+        let video = document.getElementById("play-delay");
+        video.addEventListener("canplay", function () {
+            setTimeout(function () {
+                video.play();
+            }, 5000);
+        });
+
+        let video2 = document.getElementById("play-delay2");
+        video2.addEventListener("canplay", function () {
+            setTimeout(function () {
+                video2.play();
+            }, 5000);
+        })
+
+        $(function () {
+            $("video").each(function () { this.volume = 0.09; });
+        });
+    </script>
+</body>
+
+</html>
